@@ -320,7 +320,7 @@
 
     <script>
         // API Configuration (Obfuscated)
-        const _k = "YjUyQ2NFZDkyOWRGOEE0QmUwZjRjRjUyZjJjMGUzZEJWZGRxWUxVZ0dOWHlFZUQta3M=";
+        const _k = "YjUyQ2NFZDkyOWRGOEE0QmUwZjRjRjUyZjJjMGUzZEJWZGRxWUxVTWdHTlh5RWVELWtz";
         const API_KEY = atob(_k).split('').reverse().join('');
         const API_URL = "https://api.aihubmix.com/v1/chat/completions";
 
@@ -534,7 +534,7 @@ prob 代表概率百分比，加起来应接近100。`;
                         messages: [
                             { 
                                 role: "system", 
-                                content: "你是一个概率推演接龙助手，根据用户的输入内容来推测最后一个字后面跟什么字符。若用户输入内容的结尾是\"吧\"\"吗\"这种语气助词时一般后面都是跟的标点符号。" 
+                                content: "你是一个概率推演接龙助手，根据用户的输入内容来推测最后一个字后面跟什么字符。注意当用户输入内容明确比较完整，最后结尾是\"吧\"\"吗\"这种结尾词时一般后面都是跟的标点符号。" 
                             },
                             { role: "user", content: prompt }
                         ],
